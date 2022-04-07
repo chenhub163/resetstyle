@@ -9,6 +9,7 @@
 */
 html {
   font-size: 12px;
+  font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -141,6 +142,12 @@ div {
   
 */
 
+h1, h2, h3,
+h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -150,11 +157,36 @@ body {
   margin: 0;
 }
 
-body, aside, section,
-header {
+body, aside, section, footer,
+header, nav, article, hgroup {
   box-sizing: border-box;
 }
 
+/*
+@title: interactive 
+@ctitle: 互动元素
+@elements: 
+  <menu> <details> <summary> 
+@ignore: 
+  <command>
+*/
+
+summary {
+  list-style: none;
+}
+
+menuitem {
+  display: block;
+}
+
+menu {
+  padding: 0;
+  margin: 0;
+}
+
+menu, details {
+  box-sizing: border-box;
+}
 
 /*
 @title: forms
@@ -165,15 +197,6 @@ header {
   <output> <keygen> <fieldset> <progress>
 */
 
-
-
-
-/*
-@title: interactive 
-@ctitle: 互动元素
-@elements: 
-  <menu> <command> <summary> <details>
-*/
 
 
 /*
