@@ -7,14 +7,17 @@
 @ctitle: 根元素
 @elements: <html>
 */
-
+html {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* 
 @title: metadata and scripting
-@ctitle: 元数据脚本
-@elements: 
-  <head> <title> <meta> <base> <style>
-  <link> <script> <noscript>
+@ctitle: 元数据脚本元素
+@ignore:
+  <head> <meta> <title> <noscript>
+  <link> <script> <style> <base> 
 */
 
 
@@ -23,20 +26,135 @@
 @title: text-level
 @ctitle: 文本级别元素
 @elements: 
-  <span> <a> <em> <i> <small> <rt> <ins> <s> <rp> <abbr>
-  <time> <b> <strong> <del> <kbd> <q> <var> <sub> <mark>
-  <bdi> <wbr> <cite> <samp> <sup> <ruby> <bdo> <code>
+  <span> <a> <em> <i> <small>  <ins> <s> <abbr>
+  <b> <strong> <del> <kbd> <q> <var> <sup> <sub> 
+  <mark> <bdi> <bdo> <cite> <samp>  <code>
+@ignore:
+  <ruby> <rt> <rp> <time> <wbr> 
 */
 
+bdo,
+bdi {
+  unicode-bidi: normal;
+}
+
+mark {
+  background-color: initial;
+  color: inherit;
+}
+
+sup,
+sub {
+  vertical-align: initial;
+  font-size: inherit;
+}
+
+q::before,
+q::after {
+  content: "";
+}
+
+code,
+samp,
+kbd {
+  font-family: inherit;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+abbr[title],
+ins, del,
+s, a {
+  text-decoration: none;
+}
+
+small {
+  font-size: inherit;
+}
+
+i {
+  /* 将 <i> 变为 inline-block 是因为日常开发中经常使用它作为icon图标 */
+  display: inline-block;
+}
+
+var, cite,
+em, i {
+  font-style: normal;
+}
+
+
+a {
+  color: inherit;
+}
 
 /*
 @title: grouping content
 @ctitle: 分组内容
 @elements: 
-  <div> <pre> <br> <p> <blockquo> <hr>
-  <ol> <ul> <li> <dl> <dt> <dd>
-  <figcaption> <figure>
+  <div> <pre> <p> <blockquo>
+  <ol> <ul> <li> <dl> <dd>
+  <figure>
+@ignore:
+  <br> <hr> <dt> <figcaption>
 */
+figure {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+ol, ul {
+  padding: 0;
+  list-style: none;
+}
+
+blockquo {
+  display: inline-block;
+}
+
+pre {
+  font-family: inherit;
+}
+
+ol, ul, dl,
+pre, p {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/*
+@title: document sections
+@ctitle: 文档块
+@elements:
+  <body> <aside> <address> <section> <header>
+  <h1> <h2> <h3> <h4> <h5> <h6> <nav> <article>
+  <footer> <hgroup>
+@ignore:
+  
+*/
+
+
+address {
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+body, aside, section,
+header {
+  box-sizing: border-box;
+}
+
 
 /*
 @title: forms
@@ -48,14 +166,6 @@
 */
 
 
-/*
-@title: document sections
-@ctitle: 文档块
-@elements:
-  <body> <aside> <address> <section> <header>
-  <h1> <h2> <h3> <h4> <h5> <h6> <nav> <article>
-  <footer> <hgroup>
-*/
 
 
 /*
