@@ -1,0 +1,86 @@
+/**
+* 107
+*/
+
+/* 
+@title: root
+@ctitle: 根元素
+@elements: <html>
+*/
+
+
+/* 
+@title: metadata and scripting
+@ctitle: 元数据脚本
+@elements: 
+  <head> <title> <meta> <base> <style>
+  <link> <script> <noscript>
+*/
+
+
+
+/* 
+@title: text-level
+@ctitle: 文本级别元素
+@elements: 
+  <span> <a> <em> <i> <small> <rt> <ins> <s> <rp> <abbr>
+  <time> <b> <strong> <del> <kbd> <q> <var> <sub> <mark>
+  <bdi> <wbr> <cite> <samp> <sup> <ruby> <bdo> <code>
+*/
+
+
+/*
+@title: grouping content
+@ctitle: 分组内容
+@elements: 
+  <div> <pre> <br> <p> <blockquo> <hr>
+  <ol> <ul> <li> <dl> <dt> <dd>
+  <figcaption> <figure>
+*/
+
+/*
+@title: forms
+@ctitle: 表单元素
+@elements:
+  <form> <input> <label> <select> <option> <button>
+  <textarea> <meter> <legend> <optgroup> <datalist>
+  <output> <keygen> <fieldset> <progress>
+*/
+
+
+/*
+@title: document sections
+@ctitle: 文档块
+@elements:
+  <body> <aside> <address> <section> <header>
+  <h1> <h2> <h3> <h4> <h5> <h6> <nav> <article>
+  <footer> <hgroup>
+*/
+
+
+/*
+@title: interactive 
+@ctitle: 互动元素
+@elements: 
+  <menu> <command> <summary> <details>
+*/
+
+
+/*
+@title: tabular data
+@ctitle: 表格数据
+@elements: 
+  <table> <tbody> <thead> <tfoot>
+  <tr> <th> <td> <col> <colgroup>
+  <caption>
+*/
+
+
+/*
+@title: embedding content
+@ctitle: 嵌入内容
+@elements:
+  <img> <area> <map> <embed> <object> <param>
+  <source> <iframe> <canvas> <track> <audio>
+  <video>
+*/
