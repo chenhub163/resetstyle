@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/**
+* 107
+*/
+/* 
+@title: root
+@ctitle: 根元素
+@elements: <html>
+*/
+html {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+@title: metadata and scripting
+@ctitle: 元数据脚本元素
+@ignore:
+  <head> <meta> <title> <noscript>
+  <link> <script> <style> <base> 
+*/
+/* 
+@title: text-level
+@ctitle: 文本级别元素
+@elements: 
+  <span> <a> <em> <i> <small>  <ins> <s> <abbr>
+  <b> <strong> <del> <kbd> <q> <var> <sup> <sub> 
+  <mark> <bdi> <bdo> <cite> <samp>  <code>
+@ignore:
+  <ruby> <rt> <rp> <time> <wbr> 
+*/
+bdo,
+bdi {
+  unicode-bidi: normal;
+}
+
+mark {
+  background-color: initial;
+  color: inherit;
+}
+
+sup,
+sub {
+  vertical-align: initial;
+  font-size: inherit;
+}
+
+q::before,
+q::after {
+  content: "";
+}
+
+code,
+samp,
+kbd {
+  font-family: inherit;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+abbr[title],
+ins, del,
+s, a {
+  text-decoration: none;
+}
+
+small {
+  font-size: inherit;
+}
+
+i {
+  /* 将 <i> 变为 inline-block 是因为日常开发中经常使用它作为icon图标 */
+  display: inline-block;
+}
+
+var, cite,
+em, i {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+}
+
+/*
+@title: grouping content
+@ctitle: 分组内容
+@elements: 
+  <div> <pre> <p> <blockquo>
+  <ol> <ul> <li> <dl> <dd>
+  <figure>
+@ignore:
+  <br> <hr> <dt> <figcaption>
+*/
+figure {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+ol, ul {
+  padding: 0;
+  list-style: none;
+}
+
+blockquo {
+  display: inline-block;
+}
+
+pre {
+  font-family: inherit;
+}
+
+ol, ul, dl,
+pre, p {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/*
+@title: document sections
+@ctitle: 文档块
+@elements:
+  <body> <aside> <address> <section> <header>
+  <h1> <h2> <h3> <h4> <h5> <h6> <nav> <article>
+  <footer> <hgroup>
+@ignore:
+
+*/
+h1, h2, h3,
+h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+body, aside, section, footer,
+header, nav, article, hgroup {
+  box-sizing: border-box;
+}
+
+/*
+@title: interactive 
+@ctitle: 互动元素
+@elements: 
+  <menu> <details> <summary> 
+@ignore: 
+  <command>
+*/
+summary {
+  list-style: none;
+}
+
+menuitem {
+  display: block;
+}
+
+menu {
+  padding: 0;
+  margin: 0;
+}
+
+menu, details {
+  box-sizing: border-box;
+}
+
+/*
+@title: embedding content
+@ctitle: 嵌入内容
+@elements:
+  <img> <iframe> <canvas>
+  <audio> <video> <source> <track> 
+@ignore: 
+  <map> <area> <embed>
+  <object> <param>
+*/
+video,
+audio,
+canvas,
+iframe,
+img {
+  display: block;
+  box-sizing: border-box;
+}
+
+/*
+@title: tabular data
+@ctitle: 表格数据
+@elements: 
+  <table> <thead> <tbody> <tfoot>
+  <tr> <th> <td> <col> <colgroup>
+  <caption>
+*/
+/*
+@title: forms
+@ctitle: 表单元素
+@elements:
+  <form> <input> <label> <select> <option> <button>
+  <textarea> <meter> <legend> <optgroup> <datalist>
+  <output> <keygen> <fieldset> <progress>
+*/
+form {
+  box-sizing: border-box;
+}
