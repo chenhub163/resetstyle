@@ -1,0 +1,31 @@
+{
+  "name": "resetstyle",
+  "private": true,
+  "version": "1.0.1",
+  "description": "reset css default style.",
+  "main": "dist/resetcss.min.css",
+  "maintainers": [
+    {
+      "name": "chenhub163",
+      "email": "chen_hub@163.com"
+    }
+  ],
+  "bugs": {
+    "email": "chen_hub@163.com"
+  },
+  "keywords": [
+    "resetstyle",
+    "restcss",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenhub163/resetstyle.git"
+  },
+  "author": "chenhub163 <chen_hub@163.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json"
+  ]
+}
