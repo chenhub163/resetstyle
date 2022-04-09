@@ -188,6 +188,39 @@ menu, details {
   box-sizing: border-box;
 }
 
+
+/*
+@title: embedding content
+@ctitle: 嵌入内容
+@elements:
+  <img> <iframe> <canvas>
+  <audio> <video> <source> <track> 
+@ignore: 
+  <map> <area> <embed>
+  <object> <param>
+*/
+
+video,
+audio,
+canvas,
+iframe,
+img {
+  display: block;
+  box-sizing: border-box;
+}
+
+
+
+/*
+@title: tabular data
+@ctitle: 表格数据
+@elements: 
+  <table> <thead> <tbody> <tfoot>
+  <tr> <th> <td> <col> <colgroup>
+  <caption>
+*/
+
+
 /*
 @title: forms
 @ctitle: 表单元素
@@ -197,23 +230,6 @@ menu, details {
   <output> <keygen> <fieldset> <progress>
 */
 
-
-
-/*
-@title: tabular data
-@ctitle: 表格数据
-@elements: 
-  <table> <tbody> <thead> <tfoot>
-  <tr> <th> <td> <col> <colgroup>
-  <caption>
-*/
-
-
-/*
-@title: embedding content
-@ctitle: 嵌入内容
-@elements:
-  <img> <area> <map> <embed> <object> <param>
-  <source> <iframe> <canvas> <track> <audio>
-  <video>
-*/
+form {
+  box-sizing: border-box;
+}
